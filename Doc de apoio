@@ -5,7 +5,7 @@ Karina Sayuri Hagiwara – ra: 171419
 
 1. Elicitação de requisitos
 
-2. Requisitos
+2. Requisitos conscientes
   o O sistema deverá verificar se um número é impar ou par quando um número inteiro positivo é fornecido.
   o O sistema deverá informar ao usuário se o número é negativo ou positivo quando um número inteiro é fornecido pelo usuário.
   o Assim que iniciado, o sistema deverá mostrar ao usuário um menu e verificar que operação ele deseja realizar – verificar se um número é par ou impar ou verificar se um numero é positivo ou negativo ou se ele deseja sair do programa.
