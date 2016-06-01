@@ -1,5 +1,7 @@
+
 #include <stdio.h>
-//printf menu opções
+#include <stdlib.h>
+//printf funcionalidade numero pos ou neg
 int main(){
 	int opcao=0;
 	float numero=0;
@@ -12,10 +14,14 @@ int main(){
 		printf("3- Sair.\n");
 		printf("Digite o número da opção desejada.\n");
 		scanf("%d", &opcao);
+	//	system("pause");
+	//	system("cls");
 		switch(opcao){
 			case 1:
 				numero=0;
-				scanf("%d", &numero);
+				printf("Verificar se o número é positivo ou negativo.\n");
+				printf("Digite um número:\n");
+				scanf("%f", &numero);
 				if(numero<0){
 					printf("é negativo\n");
 				}else{
@@ -24,6 +30,8 @@ int main(){
 				break;
 			case 2:
 				num=0;
+				printf("Verificar se o número é ímpar ou par.\n");
+				printf("Digite um número inteiro:\n");
 				scanf("%d", &num);
 				if((num%2)==0){
 					printf("é par\n");
@@ -33,6 +41,8 @@ int main(){
 				break;
 			case 3:
 				num=0;
+				printf("Deseja realmente sair?\n");
+				printf("Digite 1 se deseja sair, caso contrário digite 0.\n");
 				scanf("%d", &num);
 				if(num==0){
 					sair=0;
@@ -45,6 +55,8 @@ int main(){
 				printf("não existe essa opcao\n");
 				break;
 			}
+			system("pause");
+			system("cls");
 		}
 	return 0;
 }
