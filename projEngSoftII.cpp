@@ -8,48 +8,48 @@ int main(){
 	int aux=0;
 	int sair=0;
 	while(sair!=1){
-		printf("Menu opções:\n");
-		printf("1- Verificar se o número é positivo ou negativo.\n");
-		printf("2- Verificar se o número é ímpar ou par.\n");
+		printf("Menu opcoes:\n");
+		printf("1- Verificar se o numero e positivo ou negativo.\n");
+		printf("2- Verificar se o numero e impar ou par.\n");
 		printf("3- Sair.\n");
-		printf("Digite o número da opção desejada.\n");
+		printf("Digite o numero da opcao desejada.\n");
 		scanf("%d", &opcao);
 		switch(opcao){
 			case 1:
 				numero=0;
-				printf("Verificar se o número é positivo ou negativo.\n");
-				printf("Digite um número:\n");
+				printf("Verificar se o numero e positivo ou negativo.\n");
+				printf("Digite um numero:\n");
 				scanf("%f", &numero);
 				if(numero==0){
-						printf("é neutro\n");
+						printf("%.2f e neutro\n", numero);
 				}else{
 					if(numero<0){
-						printf("é negativo\n");
+						printf("%.2f e negativo\n", numero);
 					}else{
-						printf("é positivo\n");
+						printf("%.2f e positivo\n", numero);
 					}
 				}
 				break;
 			case 2:
 				num=0;
-				printf("Verificar se o número é ímpar ou par.\n");
-				printf("Digite um número inteiro:\n");
+				printf("Verificar se o numero e impar ou par.\n");
+				printf("Digite um numero inteiro:\n");
 				scanf("%f", &num);
 				aux=num;
 				if (aux==num){
 					if((aux%2)==0){
-						printf("é par\n");
+						printf("%.0f e par\n", num);
 					}else{
-						printf("é ímpar\n");
+						printf("%.0f é ímpar\n", num);
 					}
 				}else{
-					printf("Digite um número inteiro.\n");
+					printf("Digite um numero inteiro.\n");
 				}
 				break;
 			case 3:
 				num=0;
 				printf("Deseja realmente sair?\n");
-				printf("Digite 1 se deseja sair, caso contrário digite 0.\n");
+				printf("Digite 1 se deseja sair, caso contrario digite 0.\n");
 				scanf("%f", &num);
 				if(num==0){
 					sair=0;
@@ -59,7 +59,7 @@ int main(){
 					break;
 				}
 			default:
-				printf("Não existe essa opcao\n");
+				printf("Nao existe essa opcao\n");
 				break;
 			}
 			system("pause");
